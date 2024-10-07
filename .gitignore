@@ -30,7 +30,10 @@ yarn-error.log*
 
 # vercel
 .vercel
+.vercelignore
 
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+.aider*
+shivam.jpg

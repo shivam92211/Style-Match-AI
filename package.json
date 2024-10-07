@@ -9,8 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@google-cloud/vision": "^4.3.2",
     "@google/generative-ai": "^0.20.0",
     "@tailwindcss/typography": "^0.5.15",
+    "axios": "^1.7.7",
     "canvas": "^2.11.2",
     "dotenv": "^16.4.5",
     "formidable": "^3.5.1",
