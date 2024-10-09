@@ -25,10 +25,10 @@ const Footer: React.FC = () => {
                 <a href="/about" className="hover:text-softp">About Us</a>
               </li>
               <li>
-                <a href="/color-suggestion" className="hover:text-softp">Clothes Color Suggestion</a>
+                <a href="/color" className="hover:text-softp">Clothes Color Suggestion</a>
               </li>
               <li>
-                <a href="/couple-match" className="hover:text-softp">Couple Match-Up</a>
+                <a href="/match-up" className="hover:text-softp">Couple Match-Up</a>
               </li>
             </ul>
           </div>
