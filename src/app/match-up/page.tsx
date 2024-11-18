@@ -89,7 +89,7 @@ import React, { useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm'; // For GitHub Flavored Markdown support
 import rehypeRaw from 'rehype-raw'; // For HTML in markdown
-// import AnalysisResult from '@/components/AnalysisResult';
+import AnalysisResult from '@/components/AnalysisResult';
 import ImageUploadForm2 from '@/components/ImageUploadForm2';
 
 export default function ColorPage() {
@@ -115,7 +115,7 @@ export default function ColorPage() {
     formData.append('occasion', occasion);
 
     try {
-      const response = await fetch('https://available-christye-shivam92211-89079531.koyeb.app/color-suggestion-couple', {
+      const response = await fetch('https://available-christye-shivam92211-89079531.koyeb.app/couple-suggestion/', {
         method: 'POST',
         body: formData,
       });
@@ -149,16 +149,18 @@ export default function ColorPage() {
           />
           {isLoading && <p className="text-softPink text-center">Analyzing images, please wait...</p>}
           {error && <p className="text-red-500 text-center">{error}</p>}
-          {analysisResult && (
+          {/* {analysisResult && (
             <div className="mt-4 p-4 bg-gray-100 rounded-lg shadow-inner">
               <ReactMarkdown
-                remarkPlugins={[remarkGfm]} // For GitHub Flavored Markdown
+                // remarkPlugins={[remarkGfm]} // For GitHub Flavored Markdown
                 rehypePlugins={[rehypeRaw]} // For HTML in markdown
               >
                 {analysisResult} 
               </ReactMarkdown>
             </div>
-          )}
+          )} */}
+          {analysisResult && <AnalysisResult result={analysisResult} />}
+
         </div>
       </main>
     </div>

@@ -17,7 +17,7 @@ export default function ColorPage() {
     formData.append('file', file);
 
     try {
-      const response = await fetch('https://available-christye-shivam92211-89079531.koyeb.app/color-suggestion/', {
+      const response = await fetch('https://available-christye-shivam92211-89079531.koyeb.app/single-suggestion/', {
         method: 'POST',
         body: formData,
         redirect: 'follow',
