@@ -86,9 +86,9 @@
 'use client';
 
 import React, { useState } from 'react';
-import ReactMarkdown from 'react-markdown';
-import remarkGfm from 'remark-gfm'; // For GitHub Flavored Markdown support
-import rehypeRaw from 'rehype-raw'; // For HTML in markdown
+// import ReactMarkdown from 'react-markdown';
+// import remarkGfm from 'remark-gfm'; // For GitHub Flavored Markdown support
+// import rehypeRaw from 'rehype-raw'; // For HTML in markdown
 import AnalysisResult from '@/components/AnalysisResult';
 import ImageUploadForm2 from '@/components/ImageUploadForm2';
 
